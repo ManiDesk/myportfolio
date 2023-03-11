@@ -126,7 +126,7 @@ function About() {
 </div>
                     </div>
                     <div className="mt-3">
-                      <a href="images/project/resume.pdf" download className="btn btn-default">
+                      <a href="https://firebasestorage.googleapis.com/v0/b/maniportfolio-1891c.appspot.com/o/maniresume.docx?alt=media&token=e6e3b22d-8d58-4ba9-b0ab-474eb7ba63cf" download className="btn btn-default">
                         Download CV
                       </a>
                     </div>
