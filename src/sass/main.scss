@@ -1339,3 +1339,25 @@ Due to the split circle of circle-progress-left and circle-progress right, we mu
 section#contact a:hover {
   color: #9c00dd!important;
 }
+.categorybadgecontainer {
+  display: flex;
+  grid-gap: 8px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  justify-content: flex-end;
+  padding: 0 10px;
+
+}
+.categorybadge {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+      box-shadow: 1px 2px 8px 4px #00000030;
+  font-size: 14px;
+  padding: 2px 15px;
+  /* width: 100%; */
+}

@@ -9,6 +9,10 @@ const allData = [
         projtitle: 'Website',
         image: "images/project/lnt.png",
         projLink: 'https://lntdev.oreapps.com/',
+        websitebadge1: 'React ',
+        websitebadge2: 'Bootstrap',
+        websitebadge3: '',
+
 
     },
     {
@@ -17,6 +21,10 @@ const allData = [
         projtitle: 'Website',
         image: "images/project/sterloproduct.png",
         projLink: 'https://www.sterlo.io/',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
+
 
     },
     {
@@ -25,6 +33,9 @@ const allData = [
         projtitle: 'Product',
         image: "images/project/sterloproductmain.png",
         projLink: 'https://studio.sterlo.io/',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
     {
@@ -33,6 +44,9 @@ const allData = [
         projtitle: 'Blog',
         image: "images/project/sterloblog.png",
         projLink: 'https://www.sterlo.io/blog/',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
     {
@@ -41,6 +55,9 @@ const allData = [
         projtitle: 'Help',
         image: "images/project/sterlohelp.png",
         projLink: 'https://www.sterlo.io/help/documentation/getting-started/',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
     {
@@ -49,6 +66,9 @@ const allData = [
         projtitle: 'Support',
         image: "images/project/sterlosupport.png",
         projLink: 'https://support.sterlo.io/portal/en/home',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
     {
@@ -57,6 +77,9 @@ const allData = [
         projtitle: 'Marketplace',
         image: "images/project/store.png",
         projLink: 'https://stageweb.sterlo.io/store',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
     {
@@ -65,9 +88,12 @@ const allData = [
         projtitle: 'Website',
         image: "images/project/ilce.png",
         projLink: 'https://www.ilce.in/',
+        websitebadge1: '',
+        websitebadge2: '',
+        websitebadge3: 'wordpress',
 
     },
-    
+
 ];
 
 const owndata = [
@@ -77,76 +103,90 @@ const owndata = [
         projtitle: 'TodoApp',
         image: "images/project/own.png",
         projLink: 'https://manitodoapp.web.app/',
+        websitebadge1: 'React ',
+        websitebadge2: 'Bootstrap',
+        websitebadge3: '',
 
     },
-   
+
 ];
 
 function CurrentProjectdetails() {
 
     return (
-       <>
-        <section id="works">
-            <div className="container">
-                <Pagetitle title="Current Projects" />
-                {/* Start Portfolio Filters */}
+        <>
+            <section id="works">
+                <div className="container">
+                    <Pagetitle title="Current Projects" />
+                    {/* Start Portfolio Filters */}
 
 
-                {/* Start Portfolio Items */}
-                <div className="row portfolio-wrapper justify-content-center">
-                    {allData.map((item) => (
-                        <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
-                            <div className="bg-white rounded shadow-dark  overflow-hidden">
-                                <div className="screen">
-                                    <img src={item.image} />
-                                </div>
+                    {/* Start Portfolio Items */}
+                    <div className="row portfolio-wrapper justify-content-center">
+                        {allData.map((item) => (
+                            <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
+                                <div className="bg-white rounded shadow-dark  overflow-hidden position-relative">
+                                     <div className="categorybadgecontainer">
+                                        {(item.websitebadge1 == '') || (item.websitebadge1 == undefined) || (item.websitebadge1 == null) ?null : <span className="categorybadge bg-danger text-white">{item.websitebadge1}</span>  }
+                                        {(item.websitebadge2 == '') || (item.websitebadge2 == undefined) || (item.websitebadge2 == null) ? null : <span className="categorybadge bg-primary text-white">{item.websitebadge2}</span>}
+                                        {(item.websitebadge3 == '') || (item.websitebadge3 == undefined) || (item.websitebadge3 == null) ? null : <span className="categorybadge bg-info text-dark">{item.websitebadge3}</span> }
+                                    </div> 
 
-                                {/* <img src={item.image} alt="Portfolio-title" /> */}
-                                <div className="d-flex align-items-center px-3">
-                                    <h4 className="title">{item.title} {item.projtitle}</h4>
-                                    <div className="ms-auto"><a href={item.projLink} target ='_blank' className="btn btn-warning py-2 px-3 text-uppercase" style={{fontSize:'12px'}}><i className="far fa-eye me-2"></i> View</a></div>
-                                </div>
-                            </div>
-                        </div>
+                                    <div className="screen">
+                                        <img src={item.image} />
+                                    </div>
 
-                    ))}
-                </div>
-                {/* End Portfolio Items */}
-
-
-            </div>
-        </section>
-        <section id="ownworks">
-            <div className="container">
-                <Pagetitle title="Own Work" />
-                {/* Start Portfolio Filters */}
-
-
-                {/* Start Portfolio Items */}
-                <div className="row portfolio-wrapper justify-content-center">
-                    {owndata.map((item) => (
-                        <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
-                            <div className="bg-white rounded shadow-dark  overflow-hidden">
-                                <div className="screen">
-                                    <img src={item.image} />
-                                </div>
-
-                                {/* <img src={item.image} alt="Portfolio-title" /> */}
-                                <div className="d-flex align-items-center px-3">
-                                    <h4 className="title">{item.title} {item.projtitle}</h4>
-                                    <div className="ms-auto"><a target ='_blank' href={item.projLink} className="btn btn-warning py-2 px-3 text-uppercase" style={{fontSize:'12px'}}><i className="far fa-eye me-2"></i> View</a></div>
+                                    {/* <img src={item.image} alt="Portfolio-title" /> */}
+                                    <div className="d-flex align-items-center px-3">
+                                        <h4 className="title">{item.title} {item.projtitle}</h4>
+                                        <div className="ms-auto"><a href={item.projLink} target='_blank' className="btn btn-warning py-2 px-3 text-uppercase" style={{ fontSize: '12px' }}><i className="far fa-eye me-2"></i> View</a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                    ))}
+                        ))}
+                    </div>
+                    {/* End Portfolio Items */}
+
+
                 </div>
-                {/* End Portfolio Items */}
+            </section>
+            <section id="ownworks">
+                <div className="container">
+                    <Pagetitle title="Own Work" />
+                    {/* Start Portfolio Filters */}
 
 
-            </div>
-        </section>
-       </>
+                    {/* Start Portfolio Items */}
+                    <div className="row portfolio-wrapper justify-content-center">
+                        {owndata.map((item) => (
+                            <div className="col-md-4 col-sm-6 grid-item blog-item" key={item.id}>
+                                <div className="bg-white rounded shadow-dark  overflow-hidden position-relative">
+                                <div className="categorybadgecontainer">
+                                        {(item.websitebadge1 == '') || (item.websitebadge1 == undefined) || (item.websitebadge1 == null) ?null : <span className="categorybadge bg-danger text-white">{item.websitebadge1}</span>  }
+                                        {(item.websitebadge2 == '') || (item.websitebadge2 == undefined) || (item.websitebadge2 == null) ? null : <span className="categorybadge bg-primary text-white">{item.websitebadge2}</span>}
+                                        {(item.websitebadge3 == '') || (item.websitebadge3 == undefined) || (item.websitebadge3 == null) ? null : <span className="categorybadge bg-success text-black">{item.websitebadge3}</span> }
+                                    </div> 
+                                    <div className="screen">
+                                        <img src={item.image} />
+                                    </div>
+
+                                    {/* <img src={item.image} alt="Portfolio-title" /> */}
+                                    <div className="d-flex align-items-center px-3">
+                                        <h4 className="title">{item.title} {item.projtitle}</h4>
+                                        <div className="ms-auto"><a target='_blank' href={item.projLink} className="btn btn-warning py-2 px-3 text-uppercase" style={{ fontSize: '12px' }}><i className="far fa-eye me-2"></i> View</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        ))}
+                    </div>
+                    {/* End Portfolio Items */}
+
+
+                </div>
+            </section>
+        </>
     );
 }
 

@@ -136,7 +136,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
               </li>
             </ul>
           </div>
-          <a href="https://wa.me/qr/KXIRY574WU7RJ1" className="btn btn-sm btn-success py-2 px-2" style={{borderColor:'#1ad03f',backgroundColor:'#1ad03f'}}><i className="fab fa-whatsapp fs-6"></i></a>
+          <a href="https://wa.me/qr/KXIRY574WU7RJ1" className="btn btn-sm btn-success py-2 px-2 mx-2 " style={{borderColor:'#1ad03f',backgroundColor:'#1ad03f'}}><i className="fab fa-whatsapp fs-6"></i></a>
         </nav>
       </div>
     </header>

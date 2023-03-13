@@ -23,7 +23,7 @@ function App() {
         {/* <Route path="/" exact>
           <Homepage />
         </Route> */}
-        <Route path="/dark" exact>
+        {/* <Route path="/dark" exact>
           <HomepageDark />
         </Route>
         <Route path="/light" exact>
@@ -48,7 +48,7 @@ function App() {
           <Homepage3Dark />
         </Route>
         <Route path="/blogs" component={Bloglist} exact />
-        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
+        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} /> */}
       </Switch>
     </BrowserRouter>
   );
