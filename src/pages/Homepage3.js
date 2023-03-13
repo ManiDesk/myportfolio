@@ -22,7 +22,7 @@ function Homepage3() {
     <>
       <Header3 logoSource="/images/logo.svg" />
       <main className="content-3">
-        <Element name="section-home">
+        <Element name="section-home" style={{paddingTop:'70px'}} >
           <ReactCursorPosition>
             <Herosection />
           </ReactCursorPosition>
@@ -42,22 +42,13 @@ function Homepage3() {
         <Element name="section-works">      
           <CurrentProjectdetails />
         </Element>
-       
-        <Element name="section-contact">
-          <ContactDetails />
-        </Element>
-         {/* <Element name="section-pricing">
-          <Pricing />
-        </Element>
-        <Element name="section-testimoninal">
-          <Testimonials />
-        </Element>
         <Element name="section-brandlogos">
           <Brandlogos />
         </Element>
-        <Element name="section-blogs">
-          <Blogs />
-        </Element>*/}
+        <Element name="section-contact">
+          <ContactDetails />
+        </Element>
+       
         <div className="spacer" data-height="96"></div>
       </main>
       <Footer />

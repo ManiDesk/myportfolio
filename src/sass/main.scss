@@ -1321,20 +1321,17 @@ Due to the split circle of circle-progress-left and circle-progress right, we mu
 	border-radius: 1px;
 	margin: 0 auto;
 }.screen img {
-  top: 0;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
-  transition: transform 11s;
-  transform: translateY(0px);
+  object-fit: cover;
+    object-position: top center;
+    transition: all 2s ease-in-out;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    
 }
 .screen:hover img {
-  bottom: 0;
-  transition: all 11s;
-  transform: translateY(-1100px);
+  object-position: bottom center;
+  transition: all 2s ease-in-out;
 }
 section#contact a:hover {
   color: #9c00dd!important;
@@ -1360,4 +1357,53 @@ section#contact a:hover {
   font-size: 14px;
   padding: 2px 15px;
   /* width: 100%; */
+}
+
+.client-item img {
+  display: inline-block;
+  filter: grayscale(100);
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+.client-item:hover img {
+  transition: all 0.5s;
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+span.badge-circle {
+  width: 10px;
+  height: 10px;
+  background: #02bd00;
+  display: block;
+  border-radius: 50%;
+}
+
+.badge-circle {
+	
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.badge-circle {
+  background: rgba(51, 217, 178, 1);
+  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
 }

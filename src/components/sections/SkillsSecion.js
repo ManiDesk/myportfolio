@@ -81,7 +81,7 @@ function Skillsection() {
           <div className="circle-progress-container">
             <div className="row fix-spacing justify-content-center">
               {circleprogressbar.map((circleprogress) => (
-                <div key={circleprogress.id} className="col-lg-3 col-md-3  col-sm-4">
+                <div key={circleprogress.id} className="col-lg-3 col-md-3  col-sm-4 col-6">
                   <div className="circle-progress" data-percentage={circleprogress.circlepercantage}>
                     <span className="circle-progress-left">
                       <span className="circle-progress-bar" style={{ borderColor: circleprogress.circleprogressColor }}></span>
