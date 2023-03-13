@@ -182,7 +182,7 @@ const olddata = [
         id: 7,
         title: "Best Gastro Care Center",
         projtitle: 'Website',
-        image: "images/project/oldwebsite/chennaiemergency.png",
+        image: "images/project/oldwebsite/bcc.png",
         projLink: 'https://bestgastrocare.com/',
         websitebadge1: 'HTML,CSS ',
         websitebadge2: 'Bootstrap,Jquery',
