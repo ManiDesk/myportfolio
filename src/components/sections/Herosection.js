@@ -3,7 +3,7 @@ import Typed from "react-typed";
 import { Link } from "react-scroll";
 
 function Herosection(props) {
-  const { x, y } = props.position;
+  const { x, y } = props.position; 
   const { height, width } = props.elementDimensions;
   const activeParallax = (depth = 15) => {
     let posX = (width / 2 - x) / depth;
@@ -69,7 +69,7 @@ function Herosection(props) {
           </ul>
 
           <div className="mt-4">
-            <a href="https://firebasestorage.googleapis.com/v0/b/maniportfolio-1891c.appspot.com/o/maniresume.docx?alt=media&token=e6e3b22d-8d58-4ba9-b0ab-474eb7ba63cf"  download
+            <a href="https://drive.google.com/uc?export=download&confirm=yTib&id=1ePePhx-ThPiNBLijOawIWiH35tnrIaIT"  download
               className="btn btn-default"
             
             >

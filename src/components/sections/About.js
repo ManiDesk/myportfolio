@@ -15,11 +15,11 @@ const aboutContent = {
     "Experience in using Photoshop, Figma for creating Wireframes, Prototypes, Logos, Banners, and Images",
   content4:
     "Designed web applications and web contents utilizing various Search Engine Optimization (SEO) techniques and PWA (Progressive Web App).",
-    content5: 'Expertise in Responsive Web Design (RWD) and Cross Browser Compatibility using Bootstrap.',
-    content6: 'Experience in view rendering Java Script libraries such as React JS Library.',
-    content7: 'Experience using all popular text-Editors and IDE’s like, Sublime Text, Notepad++, Microsoft Visual Studio and Code.',
-    content8: 'Well Knowledge in CSS Flexbox Concept.',
-    content9: 'Good Experience in Wordpress design development..',
+  content5: 'Expertise in Responsive Web Design (RWD) and Cross Browser Compatibility using Bootstrap.',
+  content6: 'Experience in view rendering Java Script libraries such as React JS Library.',
+  content7: 'Experience using all popular text-Editors and IDE’s like, Sublime Text, Notepad++, Microsoft Visual Studio and Code.',
+  content8: 'Well Knowledge in CSS Flexbox Concept.',
+  content9: 'Good Experience in Wordpress design development..',
 };
 
 const progressData = [
@@ -95,38 +95,38 @@ function About() {
                         Read More
                       </button>
                       {/* <!-- Modal --> */}
- <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
- <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-   <div className="modal-content">
-     <div className="modal-header">
-       <h1 className="modal-title fs-5" id="staticBackdropLabel">About MySelf</h1>
-       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div className="modal-body">
-      <ul>
-        <li>{aboutContent.content}</li>
-        <li>{aboutContent.content2}</li>
-        <li>{aboutContent.content3}</li>
-        <li>{aboutContent.content4}</li>
-        <li>{aboutContent.content5}</li>
-        <li>{aboutContent.content6}</li>
-        <li>{aboutContent.content7}</li>
-        <li>{aboutContent.content8}</li>
-        <li>{aboutContent.content9}</li>
-      </ul>
-    
-     </div>
-     <div className="modal-footer">
-     <button type="button" className="btn btn-default" data-bs-dismiss="modal">OK</button>
-       <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-       
-     </div>
-   </div>
- </div>
-</div>
+                      <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h1 className="modal-title fs-5" id="staticBackdropLabel">About MySelf</h1>
+                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                              <ul>
+                                <li>{aboutContent.content}</li>
+                                <li>{aboutContent.content2}</li>
+                                <li>{aboutContent.content3}</li>
+                                <li>{aboutContent.content4}</li>
+                                <li>{aboutContent.content5}</li>
+                                <li>{aboutContent.content6}</li>
+                                <li>{aboutContent.content7}</li>
+                                <li>{aboutContent.content8}</li>
+                                <li>{aboutContent.content9}</li>
+                              </ul>
+
+                            </div>
+                            <div className="modal-footer">
+                              <button type="button" className="btn btn-default" data-bs-dismiss="modal">OK</button>
+                              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div className="mt-3">
-                      <a href="https://firebasestorage.googleapis.com/v0/b/maniportfolio-1891c.appspot.com/o/maniresume.docx?alt=media&token=e6e3b22d-8d58-4ba9-b0ab-474eb7ba63cf" download className="btn btn-default">
+                      <a href="https://drive.google.com/uc?export=download&confirm=yTib&id=1ePePhx-ThPiNBLijOawIWiH35tnrIaIT" download className="btn btn-default">
                         Download CV
                       </a>
                     </div>
@@ -141,11 +141,10 @@ function About() {
 
 
       </div>
-  
+
 
     </section>
   );
 }
 
 export default About;
- 
