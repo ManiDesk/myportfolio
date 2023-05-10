@@ -12,14 +12,20 @@ import Homepage3Dark from "./pages/Homepage3Dark";
 import Bloglist from "./pages/Bloglist";
 import BlogDetails from "./pages/BlogDetails";
 import "./App.scss";
-
+import AddData from "./backend/pages/AddData";
+import { Link } from "react-router-dom";
 function App() {
+  const downloadlink = 'https://drive.google.com/file/d/1Fjuw-pOylYfv5oQEWvoH7W2FBn7My4tD/view?usp=share_link'
   return (
     <BrowserRouter>
+    {/* <div className="position-fixed bottom-0 end-0 z-index"><Link to="/backend/add"><button className="btn btn-primary rounded-50 p-3 m-3 fs-4"><i class="fas fa-plus"></i></button></Link></div> */}
       <Switch>
         <Route path="/" exact>
-          <Homepage3 />
+          <Homepage3 downloadlink ={downloadlink} />
         </Route>
+        {/* <Route path="/backend/add" exact>
+          <AddData />
+        </Route> */}
         {/* <Route path="/" exact>
           <Homepage />
         </Route> */}

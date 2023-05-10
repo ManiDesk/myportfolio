@@ -5,14 +5,24 @@ import Pagetitle from "../elements/Pagetitle";
 const allData = [
     {
         id: 11,
-        title: "L&T",
-        projtitle: 'Website',
+        title: "Tactive + ",
+        projtitle: 'Product',
         image: "images/project/lnt.png",
         projLink: 'https://lntdev.oreapps.com/',
         websitebadge1: 'React ',
         websitebadge2: 'Bootstrap',
         websitebadge3: '',
 
+
+    },
+    {
+        id: 2,
+        title: "Sterlo",
+        projtitle: 'Product',
+        image: "images/project/sterloproductmain.png",
+        projLink: 'https://studio.sterlo.io/',
+        websitebadge1: 'React ',
+        websitebadge2: 'Bootstrap',
 
     },
     {
@@ -27,17 +37,7 @@ const allData = [
 
 
     },
-    {
-        id: 2,
-        title: "Sterlo",
-        projtitle: 'Product',
-        image: "images/project/sterloproductmain.png",
-        projLink: 'https://studio.sterlo.io/',
-        websitebadge1: '',
-        websitebadge2: '',
-        websitebadge3: 'wordpress',
-
-    },
+   
     {
         id: 3,
         title: "Sterlo",

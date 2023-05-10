@@ -17,18 +17,18 @@ import Skillsection from "../components/sections/SkillsSecion";
 import CurrentProjectdetails from "../components/sections/CurrentProjectdetails";
 import ContactDetails from "../components/sections/ContactDetails";
 
-function Homepage3() {
+function Homepage3(props) {
   return (
     <>
       <Header3 logoSource="/images/logo.svg" />
       <main className="content-3">
         <Element name="section-home" style={{paddingTop:'70px'}} >
           <ReactCursorPosition>
-            <Herosection />
+            <Herosection downloadlink = {props.downloadlink} />
           </ReactCursorPosition>
         </Element>
         <Element name="section-about">
-          <About />
+          <About downloadlink = {props.downloadlink} />
         </Element>
         <Element name="section-skills">
           <Skillsection />

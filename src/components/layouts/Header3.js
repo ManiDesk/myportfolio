@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import Logo from "../elements/Logo";
 
@@ -15,6 +15,19 @@ function Header3({ light, logoSource, bootstrapNav }) {
       setToggleNavbar(false);
     }
   });
+  const [bgcolor] = useState(["#3d0066","#660000","#660047","#5b0066", '#1e0066' ,'#003766','#00664e','#066600' ,'#662600'])
+  const [bgcolorval , setBgcolorval] = useState(0)
+  useEffect(() => {
+    const fnbgcolor = setInterval(() => {
+      setBgcolorval((v)=> (v === bgcolor.length  ? 0 : v + 1));
+      console.log(bgcolorval)
+    //  ++i;
+     
+    }, 1000);
+    return () => {
+      clearInterval(fnbgcolor);
+    };
+  }, [bgcolorval]);
 
   return (
     <header
@@ -23,6 +36,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
           ? "desktop-header-3 fixed-top light"
           : "desktop-header-3 fixed-top"
       }
+      style ={{backgroundColor : bgcolor[bgcolorval],transition:'0.5s'}}
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">

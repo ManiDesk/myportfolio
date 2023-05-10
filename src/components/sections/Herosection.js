@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
 
@@ -12,6 +12,20 @@ function Herosection(props) {
       transform: `translate(${posX}px, ${posY}px)`,
     };
   };
+  const [bgcolor] = useState(["#3d0066","#660000","#660047","#5b0066", '#1e0066' ,'#003766','#00664e','#066600' ,'#662600'])
+  const [bgcolorval , setBgcolorval] = useState(0)
+  useEffect(() => {
+    const fnbgcolor = setInterval(() => {
+      setBgcolorval((v)=> (v === bgcolor.length  ? 0 : v + 1));
+      // console.log(bgcolorval)
+    //  ++i;
+     
+    }, 1000);
+    return () => {
+      clearInterval(fnbgcolor);
+    };
+  }, [bgcolorval]);
+
 
   return (
     <section
@@ -21,6 +35,7 @@ function Herosection(props) {
           ? "home d-flex align-items-center light"
           : "home d-flex align-items-center"
       }
+      style ={{backgroundColor : bgcolor[bgcolorval],transition:'0.5s'}}
     >
       <div className="container">
         <div className="intro">
@@ -69,7 +84,7 @@ function Herosection(props) {
           </ul>
 
           <div className="mt-4">
-            <a href="https://firebasestorage.googleapis.com/v0/b/maniportfolio-1891c.appspot.com/o/maniresume.docx?alt=media&token=e6e3b22d-8d58-4ba9-b0ab-474eb7ba63cf"  download
+            <a href={props.downloadlink}  download
               className="btn btn-default"
             
             >
