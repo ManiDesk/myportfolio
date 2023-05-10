@@ -20,7 +20,7 @@ import ContactDetails from "../components/sections/ContactDetails";
 function Homepage3(props) {
   return (
     <>
-      <Header3 logoSource="/images/logo.svg" />
+      <Header3 logoSource="/images/whitepng.png" />
       <main className="content-3">
         <Element name="section-home" style={{paddingTop:'70px'}} >
           <ReactCursorPosition>

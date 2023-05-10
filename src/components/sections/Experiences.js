@@ -6,6 +6,7 @@ const educationData = [
   {
     id: 1,
     experience :true,
+    companybased : '- Product Based Company',
     title: "OREOPS Framework Pvt Ltd - Erode",
     years: "OCTOBER 2019  —  PRESENT",
     content:
@@ -19,6 +20,7 @@ const educationData = [
   {
     id: 2,
     experience :true,
+    companybased : '- Service Based Company',
     title: "Red Ant Media LLP - Chennai",
     years: "FEBRUARY 2019  —  OCTOBER 2019",
     content:
@@ -31,6 +33,7 @@ const educationData = [
   {
     id: 3,
     experience :true,
+    companybased : '- Service Based Company',
     title: "Panamon Technologies - Chennai",
     years: "JUNE 2017  —  FEBRUARY 2019",
     content:
@@ -93,7 +96,7 @@ function Experiences() {
     </section>
     <section id="eduexperience">
       <div className="container">
-        <Pagetitle title="Education Experience" />
+        <Pagetitle title="Education Experience" /> 
         <div className="row">
                    <div className="col-md-12">
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>

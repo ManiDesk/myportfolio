@@ -33,8 +33,8 @@ function Header3({ light, logoSource, bootstrapNav }) {
     <header
       className={
         light
-          ? "desktop-header-3 fixed-top light"
-          : "desktop-header-3 fixed-top"
+          ? "desktop-header-3 fixed-top light py-2"
+          : "desktop-header-3 fixed-top py-2"
       }
       style ={{backgroundColor : bgcolor[bgcolorval],transition:'0.5s'}}
     >
